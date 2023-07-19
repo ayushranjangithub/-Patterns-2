@@ -1,0 +1,49 @@
+Print the following pattern for the given number of rows.
+Pattern for N = 4
+
+          1
+         232
+       34543
+     4567654
+
+
+
+#include<iostream>
+using namespace std;
+ int main(){
+ 	int n ;
+ 	cin>>n;
+ 	 int i = 1;
+ 	// int val = i;
+ 	 while(i<=n){
+ 	 	int k = 1;
+ 	 	while(k<=n-i){
+ 	 		cout<<" ";
+ 	 		k++;
+		  }
+		  int j = 1;
+          int val = i;
+		  while(j<=i){
+		  	cout<<val;
+		  	val++;
+		  	j++;
+		  }
+	//	  int r = 1;
+// 		  while(r <= i-1){
+// 		  	int e = 2*i-2;
+// 		  	cout<<e;
+// 		  	e--;
+// 		  	r++;
+		  	
+// 		  }
+         
+             int p=2*(i-1);
+        while(p>=i){
+            cout<<p;
+            p--;
+            
+        }
+		  cout<<endl;
+		  i++;
+	  }
+ }
